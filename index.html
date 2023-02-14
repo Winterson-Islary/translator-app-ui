@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#303134]">
+    <div id="wrapper" class=" w-full md:max-w-[1300px] mx-auto p-2 ">
+        <main id="container">
+
+          <header class="pt-20">
+            <h1 class="text-center font-playfair text-5xl font-light mb-20 text-[#9ca3af]">TRANSLATOR</h1>
+          </header>
+
+          <section id="dropDown-container" class="mb-5 flex justify-center gap-2 md:gap-[10rem] ">
+            <select name="from-language" id="from-language" form="t-form" class="w-[15em] h-11 rounded-md px-2 bg-[#4e4f53] text-[#9ca3af] text-[1.2em]">
+              <option value="lang1">Lang 1</option>
+              <option value="lang2">Lang 2</option>
+              <option value="lang3">Lang 3</option>
+            </select>
+            <select name="to-language" id="to-language" form="t-form" class="w-[15em] h-11 rounded-md px-2 bg-[#4e4f53] text-[#9ca3af] text-[1.2em]">
+              <option value="lang1">Lang 1</option>
+              <option value="lang2">Lang 2</option>
+              <option value="lang3">Lang 3</option>
+            </select>
+          </section>
+  
+          <section id="textarea-container" class="flex flex-col md:flex-row gap-10 items-center justify-center">
+                <textarea form="t-form" name="input-area" id="input-area" placeholder="Enter text" class="resize-none outline-none font-poppins bg-[#303134] p-3 h-[11em] w-full md:w-[18em] text-2xl text-white scroll-style border-b-2 border-b-[#4e4f53] border-t-2 border-t-[#4e4f53]"></textarea>
+                <!--Did Not Pass Output TextArea to the Backend-->
+                <textarea form="" readonly name="output-area" id="output-area" placeholder="Translation" class="resize-none outline-none font-poppins rounded-lg bg-[#4e4f53] p-3 h-[11em] w-full md:w-[18em] text-2xl  text-white scroll-style"></textarea>
+          </section>
+          <section id="form-container" class="mt-10 md:mt-20 flex justify-center">
+              <form action="" id="t-form">
+                  <button type="submit" class=" text-[1.2rem] font-poppins px-3 py-2 rounded-lg bg-[#4e4f53] hover:bg-[#56585e] text-[#9ca3af]">TRANSLATE</button>
+             </form>
+          </section>  
+        </main>
+    </div>
+  </body>
+</html>

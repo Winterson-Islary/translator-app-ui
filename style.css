@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*Custom Scroll Wheel*/
+.scroll-style::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll-style::-webkit-scrollbar-track {
+  display: hidden;
+}
+.scroll-style::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1em;
+}
+.scroll-style::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: #555;
+}
